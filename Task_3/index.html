@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀 Internship Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 Internship Project</h1>
+  </header>
+
+  <!-- Carousel -->
+  <section class="card">
+    <h2>🖼️ Image Carousel</h2>
+    <div class="carousel">
+      <button class="prev">⏮️</button>
+      <div class="carousel-images">
+        <img src="https://picsum.photos/600/300?random=1" alt="slide1" />
+        <img src="https://picsum.photos/600/300?random=2" alt="slide2" />
+        <img src="https://picsum.photos/600/300?random=3" alt="slide3" />
+      </div>
+      <button class="next">⏭️</button>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="card">
+    <h2>📝 Interactive Quiz</h2>
+    <div id="quiz-container"></div>
+    <div id="quizResult"></div>
+  </section>
+
+  <!-- API Data -->
+  <section class="card">
+    <h2>🌍 API Data</h2>
+    <button id="loadWeather">Load Weather</button>
+    <div id="weatherContainer"></div>
+
+    <h3>😂 Jokes</h3>
+    <button id="loadJoke">Get Joke</button>
+    <div id="jokeContainer"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

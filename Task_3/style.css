@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #6b3bda, #9c6ade);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+/* ===== Carousel ===== */
+.carousel {
+  position: relative;
+  max-width: 600px;      
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;    
+  border-radius: 12px;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6b3bda;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;          
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===== Quiz ===== */
+.option {
+  display: block;
+  background: #f1f1f1;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 400px;
+  transition: all 0.2s ease;
+}
+.option:hover { background: #6b3bda; color: #fff; }
+.option input { margin-right: 8px; }
+
+/* Review Table */
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.review-table th, .review-table td {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.review-table th {
+  background: #6b3bda;
+  color: #fff;
+}
+.review-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.review-table tr:hover {
+  background: #e7e1fa;
+}
+
+.restart-btn {
+  background:#6b3bda;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  margin-top:15px;
+  cursor:pointer;
+}
+.restart-btn:hover { background:#4d29a5; }
+
+@media (max-width: 768px) {
+  .carousel, .carousel img { width: 100%; }
+}
